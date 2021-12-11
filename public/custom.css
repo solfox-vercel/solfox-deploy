@@ -1,0 +1,9 @@
+body {
+    background-image: url("bgd.jpg");
+    background-color: #cccccc;
+}
+
+.logo {
+    margin-top: 3%;
+    text-align: center;
+}
