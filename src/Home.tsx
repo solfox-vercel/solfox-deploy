@@ -168,6 +168,7 @@ const Home = (props: HomeProps) => {
   return (
     <main>
       <div classname='mint-contianer'>
+        <div classname='minttext'>
       {wallet && (
         <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
@@ -205,6 +206,7 @@ const Home = (props: HomeProps) => {
           </MintButton>
         )}
       </MintContainer>
+       </div>
       </div>
       <Snackbar
         open={alertState.open}
