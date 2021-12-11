@@ -10,3 +10,7 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Impact', monospace;
 }
+
+.mint-contianer {
+    margin: auto;
+}

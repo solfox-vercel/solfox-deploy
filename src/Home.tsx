@@ -167,6 +167,7 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
+      <div classname='mint-contianer'>
       {wallet && (
         <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
@@ -175,9 +176,6 @@ const Home = (props: HomeProps) => {
 
       {wallet && <p>Total Available: {itemsAvailable}</p>}
 
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
 
       <MintContainer>
         {!wallet ? (
@@ -207,7 +205,7 @@ const Home = (props: HomeProps) => {
           </MintButton>
         )}
       </MintContainer>
-
+      </div>
       <Snackbar
         open={alertState.open}
         autoHideDuration={6000}
